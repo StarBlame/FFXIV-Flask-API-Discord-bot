@@ -10,3 +10,9 @@ To get the discord bot token you will have to create your own at https://discord
 
 To get the Channel and Server ID's you will have to enable developer mode in settings.
 Simply right click and copy ID after.
+
+
+Sources 
+https://www.youtube.com/watch?v=LzOtbUw6f_o # Quick video for more understanding
+https://docs.discord.com/developers/bots/overview # Discord bot implementation
+https://ffxivcollect.com / https://documenter.getpostman.com/view/1779678/TzXzDHM1#da56e673-12a5-4292-89d6-343cd73c55ba # API Website and Implementation Examples
