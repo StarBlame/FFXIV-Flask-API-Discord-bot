@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>FFXIV Random Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>FFXIV Random Item/Achievement/Spell</h1>
+
+        <p class="category">{{ item.category }}</p>
+
+        <h2>{{ item.name }}</h2>
+
+        {% if item.image %}
+            <img src="{{ item.image }}" alt="{{ item.name }}" class="item-image">
+        {% endif %}
+
+        <p class="fact">{{ item.description }}</p>
+
+        <p class="length">Patch: {{ item.patch }}</p>
+        <p class="length">Owned by: {{ item.owned }}</p>
+
+        {% if item.source %}
+            <p class="length">Source: {{ item.source }}</p>
+        {% endif %}
+
+        <a href="/" class="button">Reroll</a>
+    </div>
+</body>
+</html>
